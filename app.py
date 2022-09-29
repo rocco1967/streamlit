@@ -26,6 +26,7 @@ st.title('       Calcolo Calorie')
 
 st.header('     Immetti i dati:')
 st.header('          attenzione digita in Gender 0 =Donna  1= Uomo')
+st.header('programma di rete neurale addestrato su 15000 dati clinici') 
 Gender = st.number_input('Gender:', min_value=0.0, max_value=1.0,value=1.0)
 Age = st.number_input('Age:', min_value=1.0,max_value=80.0,value=1.0)
 Height = st.number_input('Height:', min_value=1.0,max_value=210.0,value=1.0)
