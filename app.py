@@ -13,13 +13,17 @@ from sklearn.preprocessing import StandardScaler,MinMaxScaler
 import pandas #as pd
 import pickle
 import streamlit as st
+from PIL import Image
 model = pickle.load(open('streamlit.pk','rb'))
 @st.cache
 def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
     prediction = model.predict(pandas.DataFrame([[Gender, Age, Height, Weight, Duration,Heart_Rate,Body_Temp]], columns=['Gender', 'Age', 'Height', 'Weight', 'Duration', 'Heart_Rate','Body_Temp']))
     return prediction
+image = Image.open('dottore.png.png')
+st.image(image)
 st.title('Calcolo Calorie')
 #st.image("""https://www.thestreet.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTY4NjUwNDYyNTYzNDExNTkx/why-dominion-diamonds-second-trip-to-the-block-may-be-different.png""")
+
 st.header('Immetti i dati:')
 Gender = st.number_input('Gender:', min_value=0.0, max_value=1.0,value=1.0)
 Age = st.number_input('Age:', min_value=1.0,max_value=80.0,value=1.0)
