@@ -42,3 +42,4 @@ Body_Temp = st.number_input('Body_Temp:', min_value=1.0,max_value=41.0,value=1.0
 if st.button('Calcolo Calorie'):
     Calorie_Bruciate = predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp)
     st.success(f' calcolo calorie {Calorie_Bruciate[0]:.2f} KCAL')
+st.image(image)    
