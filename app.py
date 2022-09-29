@@ -24,7 +24,8 @@ st.image(image)
 st.title('       Calcolo Calorie')
 #st.image("""https://www.thestreet.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTY4NjUwNDYyNTYzNDExNTkx/why-dominion-diamonds-second-trip-to-the-block-may-be-different.png""")
 
-st.header('     Immetti i dati:  attenzione digita in Gender 0 =Donna  1= Uomo')
+st.header('     Immetti i dati: 
+          attenzione digita in Gender 0 =Donna  1= Uomo')
 Gender = st.number_input('Gender:', min_value=0.0, max_value=1.0,value=1.0)
 Age = st.number_input('Age:', min_value=1.0,max_value=80.0,value=1.0)
 Height = st.number_input('Height:', min_value=1.0,max_value=210.0,value=1.0)
