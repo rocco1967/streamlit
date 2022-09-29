@@ -18,6 +18,7 @@ model = pickle.load(open('streamlit.pk','rb'))
 @st.cache
 def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
     prediction = model.predict(pandas.DataFrame([[Gender, Age, Height, Weight, Duration,Heart_Rate,Body_Temp]], columns=['Gender', 'Age', 'Height', 'Weight', 'Duration', 'Heart_Rate','Body_Temp']))
+    prediction=abs(prediction)
     return prediction
 image = Image.open('dottore.png.png')
 st.image(image)
