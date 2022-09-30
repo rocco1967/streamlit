@@ -22,6 +22,7 @@ def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
     return prediction
 image = Image.open('dottore.png.png')
 image2= Image.open('allenamento2.jpg')
+image3 = Image.open('pasticcini2.jpg')
 st.image(image2)
 #st.image(image)
 st.title('................Calcolo Calorie...............')
@@ -61,4 +62,6 @@ if st.button('Calcolo Calorie'):
         st.header('........PUOI FARE DI MEGLIO')
     else:
         st.header('........OTTIMO LAVORO COMPLIMENTI')
+        st.header('PUOI PERMETTERTI QUESTI OGNI TANTO')
+        st.image(image3)
 st.image(image)    
