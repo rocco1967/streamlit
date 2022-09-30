@@ -21,7 +21,7 @@ def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
     prediction=abs(prediction)
     return prediction
 image = Image.open('dottore.png.png')
-image2= Image.open('allenamento2.PNG')
+image2= Image.open('allenamento2.jpg')
 st.image(image2)
 #st.image(image)
 st.title('..........Calcolo Calorie........')
