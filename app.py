@@ -42,7 +42,7 @@ Gender = st.slider("SESSO: ", min_value=0,
 #Gender = st.multi_select("seleziona sesso",["0","1"])
 st.write('inserisci eta^')
 Age = st.number_input('Age:', min_value=12.0,max_value=80.0,value=12.0)
-st.write('inserisci atezza in centimetri')
+st.write('inserisci altezza in centimetri')
 Height = st.number_input('Height:', min_value=120.0,max_value=210.0,value=120.0)
 st.write('inserisci peso in kg (reale please)')
 Weight = st.number_input('Weight:', min_value=35.0,max_value=160.0,value=35.0)
