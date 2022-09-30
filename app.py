@@ -22,7 +22,7 @@ def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
     return prediction
 image = Image.open('dottore_small2.png')
 image2= Image.open('allenamento2.jpg')
-image3 = Image.open('pasticcini2.jpg')
+image3 = Image.open('pasticcini3.jpg')
 st.image(image2)
 #st.image(image)
 st.title('................Calcolo Calorie...............')
