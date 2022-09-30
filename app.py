@@ -35,7 +35,7 @@ st.title('................Calcolo Calorie...............')
 #st.header('Heart_Rate=battito cardiaco a fine esercizio')
 st.header('programma con rete neurale che calcola il consumo di Kcalorie dopo uno sforzo fisico, addestrato su 15000 dati clinici')
 st.header('     Immetti i dati:')
-st.write('seleziona sesso...   donna =0 ... uomo=1')
+st.write('seleziona Sesso...   DONNA = 0 ... UOMO = 1')
 Gender = st.slider("SESSO: ", min_value=0,   
                        max_value=1, value=1)
 #Gender = st.number_input('Gender:', min_value=0.0, max_value=1.0,value=1.0)
