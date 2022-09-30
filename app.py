@@ -57,7 +57,7 @@ if st.button('Calcolo Calorie'):
     st.success(f' calcolo calorie {Calorie_Bruciate[0]:.2f} KCAL')
     if Calorie_Bruciate<=300:
        st.header('.........SFORZATI UN PO^ DI PIU^')
-    if Calorie_Bruciate>300 and <450:
+    if Calorie_Bruciate>300 & <450:
         st.header('........PUOI FARE DI MEGLIO')
     else:
         st.header('........OTTIMO LAVORO COMPLIMENTI')
