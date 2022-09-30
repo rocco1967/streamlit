@@ -35,7 +35,7 @@ st.header('     Immetti i dati:')
 st.header('programma di rete neurale addestrato su 15000 dati clinici')
 st.write('seleziona sesso   donna =0 uomo=1')
 Gender = st.slider("SESSO: ", min_value=0,   
-                       max_value=1, value=1, step=1.0)
+                       max_value=1, value=1)
 #Gender = st.number_input('Gender:', min_value=0.0, max_value=1.0,value=1.0)
 #Gender = st.multi_select("seleziona sesso",["0","1"])
 st.write('inserisci eta^')
