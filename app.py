@@ -58,6 +58,8 @@ if st.button('Calcolo Calorie'):
     st.success(f' calcolo calorie {Calorie_Bruciate[0]:.2f} KCAL')
     if Calorie_Bruciate<=300:
        st.header('.........SFORZATI UN PO^ DI PIU^')
+       st.header('QUESTI LI VEDI SOLO a NATALE')
+       st.image(image3) 
     elif Calorie_Bruciate<450:
         st.header('........PUOI FARE DI MEGLIO')
     else:
